@@ -20,6 +20,7 @@ namespace NPieShop.Models
         {
             order.OrderPlaced = DateTime.Now;
             _appDbContext.Orders.Add(order);
+            _appDbContext.SaveChanges();
 
             var shoppingCartItems = _shoppingCart.ShoppingCartItems;
 

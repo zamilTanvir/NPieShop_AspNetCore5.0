@@ -1,11 +1,11 @@
 ﻿@model IEnumerable<Category>
 
-<list class="dropdown nav navbar-nav">
+<list class="dropdown nav navbar-nav ">
     <a 
        asp-controller="Pie"
        asp-action="Index"
-       class="dropdown-toggle" data-toggle="dropdown">Pies</a>
-    <ul class="dropdown-menu">
+       class="dropdown-toggle navbar-brand" data-toggle="dropdown">Pies</a>
+    <ul class="dropdown-menu nav">
         @foreach(var category in Model)
             {
                 <list>
